@@ -1,5 +1,5 @@
+//Timing Out
 let myMessage = 'Hello !'
-
 
 let gretting = (message) => {
     console.log(message)
@@ -7,11 +7,11 @@ let gretting = (message) => {
 gretting(myMessage)
 
 gretting(
-    setTimeout(() => {
-        console.log(`${myMessage} Alandis`)
-    }, 2000)
-)
-
+        setTimeout(() => {
+            console.log(`${myMessage} Alandis`)
+        }, 2000)
+    )
+    // Callbacks and Recursion
 let getWords = () => {
     setTimeout(() => {
         console.log('Correct')
@@ -25,6 +25,9 @@ let getWords = () => {
 }
 getWords()
 
+
+
+// Callbacks and Recursion
 let countdown = (num, callback) => {
     setTimeout(() => {
         if (num > 0) {
@@ -35,13 +38,12 @@ let countdown = (num, callback) => {
         }
     }, 1000)
 }
-
 const isDone = () => (
     console.log('This Is Done !')
 )
 countdown(5, isDone)
 
-
+//Promises Promises ;)
 let lunchTime = false;
 
 let orderSomeFood = () => {
